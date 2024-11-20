@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bleurise</title>
+        <style>
+
+        *, *::after, *::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+            
+        }
+        
+        body{
+            background-image: url(pics/output\ \(1\).jpg);
+            background-size: 100%;
+            backdrop-filter: blur(8px); 
+            position: absolute;
+            width: 100%;
+            height: 100%;
+         }
+
+         @media (max-width:600px) {
+            body{
+                height: auto;
+            }
+         }
+
+         @media (max-width:725px){
+            .body{
+                flex-wrap: wrap;
+                width: 100%;
+                margin-bottom: 50px;
+            }
+        }
+
+         
+
+        /* navigation section */
+
+         .nav-con{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+            float: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+        }
+
+        @media (max-width: 600px){
+            .nav-con{
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: auto;
+                margin-bottom: 60px;
+            }
+        }    
+        
+
+        
+        
+
+
+
+        .navi {
+            width: 120px;
+            padding: 4px;
+            border-radius: 50px;
+            justify-content: center;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.295);
+            border: 2px solid black;
+            box-shadow: 1px 0px 0px 1px;
+        }
+
+        
+        .navi:hover{
+            background-color: black;
+        }
+
+        @media (max-width: 600px) {
+            .navi{
+            width: 30%;
+            text-align: center;
+            font-size: 12px;
+            padding: 5px;
+            gap:20px;
+            border-radius: 5px;
+            border: solid;
+            background-color: rgb(45, 88, 169);
+            }
+        }
+
+        
+
+
+        a {
+            width: 120px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            text-align: center ; 
+        }
+
+
+        .logo{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 600px) {
+
+            .logo{
+                display: none;
+            }
+            
+        }
+
+        img{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            border: solid black;
+        }
+      
+
+       
+        /* hero section */
+
+        .main-con{
+            font-family: sans-serif;
+            width: 100%;
+            height: 40%;
+            display: flex;
+            text-align: center;
+            justify-content: center;  
+        }
+        
+        @media (max-width: 600px) {
+            .main-con{
+                height: auto;
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+
+        .hero{
+            width: 80%;
+            display: block;
+            margin: auto;
+            padding-top: 5%;
+            padding-bottom: 10%;
+        }
+
+        @media (max-width:600px){
+            .hero{
+                width: 80%;
+                background-color: rgba(0, 0, 0, 0.309);
+            }
+        }
+
+        .main{
+            width: 100%;
+            display: flex;
+            
+            
+        }
+
+        #title{
+            font-family: serif;
+            padding-bottom: 5%;
+            padding-top: 10%;
+            display: block;
+            color: white;
+            font-size: 2.5vh;
+        }
+
+        @media (max-width:600px){
+            #title{
+                font-size: 15px;
+                letter-spacing: .5px;
+                padding: 10px;
+                width: 100%;
+            }
+        }
+        
+        #desc{
+            font-family: sans-serif;
+            padding: 20px;
+            color: white;
+            font-size: 2.5vh;
+        }  
+        
+        @media (max-width:600px){
+            #desc{
+                font-size: 12px;
+                letter-spacing: .5px;
+            }
+        }
+
+        /* starting section */
+
+        .start-con{
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content: center; 
+            padding-top: 10%;
+        }
+
+        @media (max-width: 600px){
+            .start-con{
+                margin-top: auto;
+                height: auto;
+            }
+
+        }
+
+        .enter{
+            width: 40%;
+            height: 60px;
+            padding: 8px;
+            background-color: rgba(255, 255, 255, 0.515);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 30px;
+            box-shadow: 1px 0px 0px 1px;
+        }
+
+        @media (max-width:600px){
+            .enter{
+                flex-wrap: wrap;
+                width: 90%;
+                padding: 5px;
+                font-size: 12px;
+                background-color: rgba(255, 255, 255, 0.309);
+            }
+        }
+
+       
+
+        #email{ 
+            border: none;
+            text-decoration: none;
+            background-color: rgba(0, 3, 5, 0); 
+        }
+
+
+        button{
+            width: 10rem;
+            padding:10px;
+            border-radius: 20px;
+            background-color: rgb(6, 130, 225);
+            box-shadow: 1px 0px 0px 1px;
+            outline: none;
+            border: none;
+        }
+
+        button:hover{
+            background-color: rgb(2, 137, 255);
+            color: black;
+            cursor: pointer;
+        }
+
+        @media(max-width:600px){
+            .button{
+                width: 3rem;
+                height: auto;
+                margin-left: 15%;
+                padding: 0px;
+                gap: 0;
+            }
+           
+        }
+
+        </style>
+    </head>
+
+<body>
+     <nav class="nav-con" >
+        <div class="navi">
+            <a href="beurise.html">Home</a>
+        </div>
+    <div class="navi">
+            <a href="about.html">About</a>
+        </div>
+    <div class="navi">
+            <a href="feature.html">Features</a>
+        </div>
+
+     <div class="logo">
+             <img src="pics/bleurise logo.png" alt="logo"> 
+        </div>
+
+    <div class="navi">
+            <a href="resources.html">Resources</a>
+        </div>
+     <div class="navi">
+            <a href="contacts.html">Contacts</a>
+        </div>
+     <div class="navi">
+            <a href="more.html">More</a>
+        </div>
+    </nav>
+    
+    
+
+
+    <main class="main-con">
+    <div class="hero">
+        <div class="main" id="title">
+             <h1>SEAFOOD SOURCING OPTICS</h1>
+        </div>
+        <div class="main" id="desc">
+            <p>At SeaSource, We Connect Seafood Lovers to Premium Sustainable Otions, Nurturing a Detailed Information with Educational Resources and Platform.</p>
+        </div>
+    </div>
+    </main>
+    
+    
+    <div class="start-con">
+
+        <div class="enter">
+            <div class="start" id="email">
+                    <p id="entmail">Enter your Email</p>
+                </div>
+            <div class="start" id="click">
+                    <a href=""><button>Sign Up</button></a>  
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+</body>
+</html>

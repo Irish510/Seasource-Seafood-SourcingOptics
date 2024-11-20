@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resources</title>
+        <style>
+        *, *::after, *::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .con{
+            display: block;
+         }
+
+       .nav-con{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+       }
+
+       
+
+       @media (max-width:600px){
+        .nav-con{
+            width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+            resize: both;
+            overflow: auto;
+             }
+         }
+
+       body{
+            background-image: url(pics/output\ \(1\).jpg);
+            background-size: 100%;
+            position: absolute;
+            backdrop-filter: blur(8px); 
+            font-family: sans-serif;
+            width: 100%;
+            height: 100%;
+            color: white;
+         }
+
+        
+
+       .navbar{
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+        background-color: #002c7397;
+        border-radius: 30px;
+        float: right;
+       }
+
+       @media (max-width:600px){
+        .navbar{
+            width: 100%;
+            flex-wrap: wrap;
+            height: auto;
+        }
+    }
+
+       .logo-con{
+        width: 50%;
+       }
+
+       @media (max-width:600px) {
+        .logo-con{
+            display: none;
+        }
+        
+       }
+
+       #logo{
+        margin-left: 50px;
+        width: 50px;
+        height: 40px;
+       }
+
+       .navi{
+        justify-content: center;
+        width: 50%;
+        display: flex;
+       }
+
+       @media (max-width:600px) {
+        .navi{
+            width: 30%;
+            text-align: center;
+            font-size: 12px;
+            padding: 5px;
+            gap:20px;
+            border-radius: 5px;
+            border: solid;
+            background-color: rgb(45, 88, 169);
+            
+        }
+       }
+
+       a{
+        color: white;
+        text-decoration: none;
+        padding-left: 4px;
+        padding-right: 4px;
+        border-radius: 20px;
+       }
+
+       a:hover{
+        background-color: rgb(51, 89, 213);
+       }
+
+       /* hero section */
+
+       
+
+       .title{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-radius: 30px;
+       }
+
+       @media (max-width:600px){
+        .title{
+            margin-top: 30px;
+            width: 100%;
+            background-color: #061529d3;
+        }
+       }
+
+       .heading{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+       }
+
+       h2{
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+       }
+
+       @media (max-width:600px){
+        h2{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+       }
+
+       p{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 20px;
+        color: white;
+       }
+
+       @media (max-width:600px){
+        #he2{
+            font-size: 12px;
+        }
+       }
+
+       .hero{
+        width: 50%;
+        display: block;
+       }
+
+       .hero, .h3{
+        width: 100%;
+        letter-spacing: 2px;
+       }
+
+       .subhead1{
+        padding: 10px;
+        width: 100;
+        margin-top: 10px;
+        margin-left: 30px;
+       }
+
+       @media (max-width:600px){
+        .subhead1{
+            margin-top: 30px;
+            font-size: 13px;
+            letter-spacing: 0;
+            font-weight: 600;
+            padding: 0;
+            height: auto;
+        }
+       }
+
+        .sor-con{
+        width: 100%;
+        height: 75%;
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
+       }
+
+       @media (max-width:600px) {
+        .sor-con{
+            flex-wrap: wrap;
+            width: 85%;
+            height: auto;
+        }
+       }
+
+       .resource{
+        display: flex;
+        height: 40%;
+        width: 100%;
+        gap: 30px;
+        margin-top: 10px;
+        background-color: rgba(0, 0, 0, 0.309);
+       }
+
+       @media (max-width:600px){
+        .resource{
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            gap: 20px;
+            justify-content: center;
+            background-color: #061529d3;
+        }
+    }
+
+       .res-c{
+        width: 90% ;
+        height: 100%;
+        margin-top: 5px;
+        display: block;
+    }
+
+    @media (max-width:600px){
+        .res-c{
+            border: none;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            height: auto;
+            width: 25%;
+            height: 100px;
+        }
+    }
+
+       .source{
+        margin: auto;
+        width: 90%;
+        height: 70%;
+        margin-top: 5px;
+        border-radius: 30px;
+        display: flex;
+       }
+
+       @media (max-width:600px){
+        .source{
+            height: auto;
+        }
+       }
+
+       #itm{
+       width: 100%;
+       height: 100%;
+       }
+
+       @media (max-width:600px){
+        #itm{
+            width: 70px;
+            height: 50px;
+        }
+       }
+       
+       @media (max-width:600px){
+        #itmdes{
+            font-size: 10px;
+            letter-spacing: 0.5;
+        }
+       }
+
+       .subhead{
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 20px;
+       }
+       
+       .subhead, .h3{
+        letter-spacing: 2px;
+       }
+
+       #gf{
+        width: 100%;
+       }
+
+       @media (max_width:600px){
+        .gf{
+            margin-top: 130px;
+        }
+       }
+
+       .des{
+        margin-top: 10px;
+        font-size: 15px;
+       }
+
+       #itmdes{
+        font-size: 13px;
+        align-items: center;
+       }
+
+       @media (max-width:600px){
+        .des{
+            height: auto;
+        }
+       }
+
+       
+       
+       .nd{
+        display: flex;
+        justify-content: center;
+        height: 40%;
+        max-width: 100%;
+        gap: 30px;
+        margin-left: 15px ;
+        margin-right: 15px ;
+        background-color:rgba(0, 0, 0, 0.281);
+       }
+
+       @media (max-width:600px){
+        .nd{
+            flex-wrap: wrap;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 80px;
+            margin-top: 30px;
+            margin-left: none;
+            margin-right: none;
+            background-color: #061529d3;
+        }
+    }
+
+       .res-b{
+        width: 18%;
+        height: 100%;
+        margin-top: 5px;
+        display: block;
+       }
+
+       @media (max-width:600px){
+        .res-b{
+            border: none;
+            flex-wrap: wrap;
+            width: 25%;
+            height: auto;
+            margin-bottom: 60px;
+             }
+         }
+       .source-1{
+        width: 90%;
+        height: 80%;
+        display: block;
+        margin: auto;
+       }
+
+       @media (max-width:600px){
+        .source-1{
+            height: auto;
+        }
+       }
+
+       #itms{
+        margin-top: 10px;
+        margin-left: 5%;
+        width: 90%;
+        height: 70%;
+       }
+
+       @media (max-width:600px){
+        #itms{
+            width: 70px;
+            height: 50px;
+        }
+       }
+
+       .descr{
+        width: 100%;
+        height: 100%;
+       }
+
+       #desc1{
+        font-size: 13px;
+       }
+
+       @media (max-width:600px){
+        .descr{
+            height: auto;
+        }
+       }
+
+       @media (max-width:600px){
+        #desc1{
+            font-size: 10px;
+            letter-spacing: 0.5;
+        }
+       }
+
+
+        </style>
+</head>
+<body>
+    <div class="con">
+        <div class="nav-con" >
+            <div class="logo-con" id="bg1">
+                <img src="pics/bleurise logo.png" id="logo" alt="logo">
+            </div>
+            <div class="navbar">
+                <div class="navi">
+                        <a href="beurise.html">Home</a>
+                    </div>
+                <div class="navi">
+                        <a href="about.html">About</a>
+                    </div>
+                <div class="navi">
+                        <a href="feature.html">Features</a>
+                    </div>
+                <div class="navi">
+                        <a href="resources.html">Resources</a>
+                    </div>
+                <div class="navi">
+                        <a href="contacts.html">Contacts</a>
+                    </div>
+                <div class="navi">
+                        <a href="more.html">More</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title">
+        <div class="heading">
+            <h2>SeaSource: Seafood Sourcing Optics Resources</h2>
+            <p id="he2">Empower your seafood sourcing with our curated collection of resources. 
+                Dive in and Explore Today!</p>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="subhead1"><h3>Informative Articles and Blog Posts</h3></div>
+    </div>
+    <div class="sor-con">
+        
+    <div class="resource">
+            <div class="res-c">
+                <div class="source">
+                    <img src="pics/fit.jpeg" alt="1" id="itm">
+                </div>
+                <div class="des"> <p id="itmdes">Sustainable Seafood Sourcing Strategies </p> </div>
+            </div>   
+            <div class="res-c">
+                <div class="source">
+                    <img src="pics/climate chng.jpg" alt="2" id="itm">
+                </div>
+                <div class="des"> <p id="itmdes">The Impact of Climate Change on Seafood Supply Chains </p> </div>
+            </div>
+            <div class="res-c">
+                <div class="source">
+                    <img src="pics/nav com.jpeg" alt="3" id="itm">
+                </div>
+                <div class="des"> <p id="itmdes">Navigating Complex
+                    Seafood Regulations </p> </div>
+            </div>
+            <div class="res-c">
+                <div class="source">
+                    <img src="pics/sea fraud.jpeg" alt="4" id="itm">
+                </div>
+                <div class="des"> <p id="itmdes">Seafood Fraud and 
+                    Counterfeit Products</p> </div>
+            </div>
+            <div class="res-c">
+                <div class="source">
+                    <img src="pics/images (1).jpeg" alt="5" id="itm">
+                </div>
+                <div class="des"> <p id="itmdes">Case Studies of Successful 
+                    Seafood Sourcing Initiatives </p> </div>
+            </div>
+    </div>
+
+            <div class="subhead"> <h3 id="gf">Interactive Tools and Calculators</h3></div>    
+        
+        <div class="nd"> 
+                <div class="res-b">
+                    <div class="source-1">
+                        <img src="pics/int map.jpg" alt="a1" id="itms">
+                        </div> 
+                        <div class="descr"> <p id="desc1"> Interactive Map of 
+                            Sustainable Fisheries</p></div>
+                </div>
+
+                <div class="res-b">
+                    <div class="source-1">
+                        <img src="pics/tol as.png" alt="a1" id="itms">
+                        </div> 
+                        <div class="descr"> <p id="desc1"> Seafood Carbon
+                            Footprint Calculator</div>
+                    
+                </div> 
+
+                <div class="res-b">
+                    <div class="source-1">
+                        <img src="pics/source risk.png" alt="a1" id="itms">
+                    </div> 
+                    <div class="descr"> <p id="desc1"> Seafood Sourcing Risk 
+                        Assessment Tool</p></div>
+                        
+                </div> 
+        </div>
+
+               
+    </div>
+     
+
+</body>
+</html>

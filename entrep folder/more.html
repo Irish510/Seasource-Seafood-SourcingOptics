@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more</title>
+        <style>
+        *, *::after, *::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(pics/output\ \(1\).jpg);
+            background-size: 100%;
+            backdrop-filter: blur(8px); 
+            position: absolute;
+            font-family: sans-serif;
+            width: 100%;
+            height: 100%;
+         }
+
+         /* @media (max-width:600px){
+        body{
+            background-image: none;
+            background-color: blue;
+        }
+        
+       } */
+
+
+         .nav-con{
+            display: flex;
+            width: 100%;
+         }
+        
+         .con{ 
+            width: 100%;
+            display: flex; 
+
+        }
+
+       .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: auto;
+        gap: 30px;
+        padding: 5px;
+        border-radius: 30px;
+       }
+
+       @media (max-width:600px){
+        .navbar{
+            width: 100%;
+            justify-content: center;
+            height: auto;
+            flex-wrap: wrap;
+            gap: 0;
+            padding: 0;
+        }
+       }
+
+       .logo-con{
+        width: 30%;
+        margin-left: 15px;
+        display: flex;
+        gap: 30px;
+       }
+
+       @media (max-width:600px){
+        .logo-con{
+            display: none;
+        }
+       }
+
+       #logo{
+        margin-left: 70px;
+        width: 70px;
+        height: 70px;
+       }
+
+       #sidelogo{
+        color: white;
+       }
+
+       .navi{
+        float: right ;
+       }
+
+       @media (max-width:600px){
+        .navi{
+            width: 30%;
+            text-align: center;
+            font-size: 12px;
+            padding: 5px;
+            gap:20px;
+            border-radius: 5px;
+            border: solid;
+            background-color: rgb(45, 88, 169);
+            
+
+        }
+       }
+
+       a{
+        color: white;
+        text-decoration: none;
+        padding-left: 4px;
+        padding-right: 4px;
+        border-radius: 20px;
+       }
+
+       a:hover{
+        background-color: rgb(51, 89, 213);
+        padding: 0px;
+       }
+
+       .herocont{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        gap: 40px;
+       }
+
+       @media (max-width:600px){
+        .herocont{
+            display: block;
+        }
+       }
+
+       .herocon1{
+        display:block;
+        margin-top: 20px;
+        margin-left: 40px;
+        width: 30%;
+        height: 96%;
+       }
+
+       @media (max-width:600px){
+        .herocon1{
+            width: 100%;
+            height: auto;
+            margin-left: 0;
+        }
+       }
+
+       .search{
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+       }
+
+       @media (max-width:600px){
+        .search{
+            border-radius: 20px;
+            width: 93.3%;
+            justify-content: flex-end;
+        }
+       }
+
+       #search{
+        margin-top: 20px;
+        padding: 10px;
+        width: 80%;
+        border-radius: 30px;
+       }
+
+       @media (max-width:600px){
+        #search{
+            width: 50%;
+            margin-right: 10px;
+            padding: 0;
+            border-radius: 0;
+            margin-top: 10px;
+        }
+       }
+
+
+       .subtopic{
+        background-color: rgba(255, 255, 255, 0.465);
+        border-radius: 30px;
+        color: black;
+        width: 100%;
+        display: block;
+        margin: auto;
+        text-align: center;
+       }
+
+       @media (max-width:600px){
+        .subtopic{
+            width: 80%;
+            text-align: start;
+            border-radius: 10px;
+            height: auto;
+            font-size: 11px;
+            border-radius: 0;
+        }
+       }
+
+       .con12{
+        width: 100%;
+        height: 25%;
+        margin-bottom: 5px;
+        
+       }
+
+       @media (max-width:600px){
+        .con12{
+            margin-top: 30px;
+            display: block;
+            height: auto;
+        }
+       }
+
+       .ttl1{
+        margin-top: 10px;
+        background-color: rgba(255, 255, 255, 0.503);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+       }
+
+       .ttl2{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.42);
+       }
+
+       @media (max-width:600px){
+        .ttl2{
+            width: 80%;
+            height: 80px;
+            border-radius: 0;
+            margin: auto;
+            resize: both;
+        }
+       }
+
+       .ttl00{
+        margin-top: 10px;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0.42);
+       }
+
+       @media (max-width:600px){
+        .ttl00{
+            width: 80%;
+            height: 80px;
+            border-radius: 0;
+            margin: auto;
+            resize: both;
+        }
+       }
+
+
+       .heart{
+        display: flex;
+       }
+
+       @media (max-width:600px){
+        .heart{
+            width: 40%;
+            height: 90px;
+            padding: 5px;
+            resize: both;
+            overflow: auto;
+        }
+       }
+
+
+       #heart1{
+        margin-top: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+       }
+
+       .heart2{
+        display: flex;
+        justify-content: flex-end;
+       }
+
+       @media (max-width:600px){
+        .heart2{
+            font-size: 11px;
+        }
+       }
+
+       #heart3{
+        width: 80%;
+        height: 100%;
+        text-align: center;
+        font-size: 13px;
+        margin: auto;
+        color: white;
+        text-align: justify;
+        margin-bottom: 20px;
+        padding-top: 30px;
+       }
+
+       
+
+       .herocon2{
+        display:block;
+        width: 30%;
+        height: 90%;
+        margin-top: 60px;
+       }
+
+       @media (max-width:600px){
+        .herocon2{
+            width: 100%;
+            width: 100%;
+            margin-top: 20px;
+            height: auto;
+        }
+       }
+
+       #title2{
+        letter-spacing: 3.5px;
+        font-size: 1.2rem;
+       }
+
+       @media (max-width:600px){
+        #title2{
+            width: 90%;
+            letter-spacing:2px;
+            font-size: 13px;
+        }
+       }
+
+       #title001{
+        letter-spacing: 3.5px;
+        font-size: 1.2rem;
+        margin-top: 37px;
+       }
+
+       @media (max-width:600px){
+        #title001{
+            width: 90%;
+            letter-spacing:2px;
+            font-size: 13px;
+        }
+       }
+
+       #title1{
+        letter-spacing: 1.5px;
+       }
+       
+       .foot{
+        display: flex;
+        justify-content: center;
+        margin-top: 370px;
+       }
+
+       @media (max-width:600px){
+        .foot{
+            display: none;
+        }
+       }
+
+       #footer{
+        color: white;
+       }
+
+       .herocon3{
+        background-color: rgba(0, 0, 0, 0.42);
+        color: rgb(255, 255, 255);
+        display: block;
+        font-size: 13px;
+        width: 30%;
+        height: 90%;
+        margin-top: 70px;
+        margin-bottom: 40px;
+        border-radius: 30px;
+       }
+
+       @media (max-width:600px){
+        .herocon3{
+            margin: auto;
+            width: 80%;
+            border-radius: 0;
+            margin-bottom: 50px;
+        }
+       }
+
+       .icon1{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+       }
+
+       #iconpic{
+        width: 40px;
+        height: 40px;
+       }
+
+       @media (max-width:600px){
+        #iconpic{
+            width: 20px;
+            height: 20px;
+            padding: 3px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    }
+
+       #sub1{
+        text-align: center;
+        margin-top: 20px;
+        letter-spacing: 1.5px;
+        font-size: 20px;
+        padding: 15px 15px;
+    }
+
+    @media (max-width:600px){
+        #sub1{
+            font-size: 15px;
+        }
+    }
+
+    .subt01{
+        width: 80%;
+        margin: auto;
+    }
+
+    @media (max-width:600px){
+        .subt01{
+            font-size: 13px;
+        }
+    }
+
+   
+
+    #sub01{text-align: center;
+        margin-top: 20px;
+        width: 100%;
+        padding: 15px;
+        padding-top: 5px;
+        margin-right: 20px;
+    }
+
+    li{
+        margin: auto;
+        margin-left: 30px;
+        text-align: center;
+        width: 100%;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    @media (max-width:600px){
+        li{
+            font-size: 12px;
+        }
+    }
+
+     .support{
+        width: 80%;
+     }
+    .foot-con{
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (max-width:600px){
+        .foot-con{
+            margin-top: 60px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+     .footer12{
+        width: 150%;
+        display: flex;
+        gap: 5px;
+     }  
+
+
+     #footer2{
+        color: black;
+        font-size: 12px;
+        text-decoration: none;
+        margin-bottom: 30px;
+     }
+
+     @media (max-width:600px){
+        #footer2{
+            width: 50%;
+            font-weight: 800;
+        }
+    }
+
+
+
+        </style>
+</head>
+<body>
+   
+ <div class="nav-con">    
+    <div class="logo-con" id="bg1">
+            <img src="pics/bleurise logo.png" id="logo" >
+            <h3 id="sidelogo">SEASOURCE: SEAFOOD SOURCING OPTICS</h3>
+    </div>
+
+    
+        <div class="con">       
+            <div class="navbar">
+                <div class="navi">
+                        <a href="beurise.html">Home</a>
+                    </div>
+                <div class="navi">
+                        <a href="about.html">About</a>
+                    </div>
+                <div class="navi">
+                        <a href="feature.html">Features</a>
+                    </div>
+                <div class="navi">
+                        <a href="resources.html">Resources</a>
+                    </div>
+                <div class="navi">
+                        <a href="contacts.html">Contacts</a>
+                    </div>
+                <div class="navi">
+                        <a href="more.html">More</a>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+</div>  
+
+<div class="herocont">
+    <div class="herocon1">
+            <div class="search"> <input type="search" id="search" placeholder="   Search..."> </div>
+            <div class="subtopic"> <h4 id="title2">Popular Community Topics</h4>
+                <p>Sustainable and Ethical Sourcing</p>
+            </div>
+            
+        <div class="con12"> 
+                
+            <div class="ttl2" >
+                    <div class="heart"> <img src="/pics/heart.png" id="heart1"> </div>
+                    <div class="heart2"> <p id="heart3">
+                        Sustainable fishing, ethical 
+                        aquaculture, and transparent 
+                        supply chains are crucial for 
+                        responsible seafood sourcing. </p> 
+                    </div> 
+            </div>
+            <div class="ttl2" >
+                    <div class="heart"> <img src="/pics/2.png" id="heart1"> </div>
+                    <div class="heart2"> <p id="heart3">
+                        Sustainable fishing, ethical 
+                        aquaculture, and transparent 
+                        supply chains are crucial for 
+                        responsible seafood sourcing. </p> 
+                    </div> 
+            </div>
+            <div class="ttl2" >
+                    <div class="heart"> <img src="/pics/3.png" id="heart1"> </div>
+                    <div class="heart2"> <p id="heart3">
+                        Sustainable fishing, ethical 
+                        aquaculture, and transparent 
+                        supply chains are crucial for 
+                        responsible seafood sourcing. </p> 
+                    </div> 
+            </div>
+         </div>
+    </div>
+
+    <div class="herocon2">
+        <div class="subtopic"> <h4 id="title001">Featured Topic</h4>
+            <p id="title1">Sustainable Fishing</p>
+        </div>
+        <div class="con12"> 
+             
+            <div class="ttl00" >
+                <div class="heart"> <img src="/pics/4.png" id="heart1"> </div>
+                <div class="heart2"> <p id="heart3">
+                    Sustainable fishing, ethical 
+                    aquaculture, and transparent 
+                    supply chains are crucial for 
+                    responsible seafood sourcing. </p> 
+                </div> 
+            </div>
+            <div class="ttl00" >
+                <div class="heart"> <img src="/pics/5.png" id="heart1"> </div>
+                <div class="heart2"> <p id="heart3">
+                    Sustainable fishing, ethical 
+                    aquaculture, and transparent 
+                    supply chains are crucial for 
+                    responsible seafood sourcing. </p> 
+                </div> 
+            </div>
+            
+        </div>
+        <div class="foot"><p id="footer">© 2024 Bleurise Corp. All Rights Reserved.</p></div>
+    </div>
+
+    <div class="herocon3">
+        <div class="subt1"><h5 id="sub1"> Bleurise Corp</h5> </div>
+        <div class="subt01"><p id="sub01">SeaSource pioneers sustainability, delivering 
+            premium service in the blue economy sector 
+            worldwide.</p></div>
+        <div class="icon1">
+            <a href="www.facebook.com"><img src="pics/facebook.png" id="iconpic"></a> 
+            <a href="www.facebook.com"><img src="pics/gmail.png" id="iconpic"></a> 
+        </div>
+
+        <div class="subt1"><h5 id="sub1"> Bleurise Corp</h5> </div>
+        <div class="support">
+            <ul>
+                <li>Help Center</li>
+                <li>Contact Us</li>
+                <li>FAQs</li>
+                <li>Feedback</li>
+            </ul>
+        </div>
+
+        <div class="subt1"><h5 id="sub1"> Contact </h5> </div>
+        <div class="support">
+            <ul>
+                <li>Email</li>
+                <li>Facebook</li>
+            </ul>
+        </div>
+        <div class="foot12">
+            <div class="foot-con">
+                <div class="f1" ><a href="" id="footer2" >Privacy Notice</a></div>
+                <div class="f1" ><a href="" id="footer2" >Cookie Policy</a></div>
+                <div class="f1" ><a href="" id="footer2" >Terms of Use</a></div>
+                <div class="f1" ><a href="" id="footer2" >Security Terms</a></div>
+            </div>
+        </div>
+        
+    </div>
+   
+
+</div>
+    
+</body>
+</html>

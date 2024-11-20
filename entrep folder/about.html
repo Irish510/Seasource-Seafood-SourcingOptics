@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+        <style>
+        *, *::after, *::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* navigation section */
+
+        body{
+            background-image: url(pics/output\ \(1\).jpg);
+            background-size: 100%;
+            backdrop-filter: blur(8px); 
+            position: absolute;
+            width: 100%;
+            height: 100%;
+         }
+
+         .nav-con{
+            display: flex;
+            width: 100%;
+         }
+
+        img{
+            width: 45px;
+            height: 45px;
+            margin-left: 20px;
+            
+        }
+
+        .navbar{
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+            padding-top: 10px;
+            background-color: #002c7397;
+        }
+
+        @media (max-width:600px) {
+           .navbar{
+            width: 100%;
+            justify-content: center;
+            height: auto;
+            flex-wrap: wrap;
+            gap: 0;
+            padding: 0;
+           }
+         }
+       
+        
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .navi{
+            float: right ;
+        }
+
+        @media (max-width:600px){
+            .navi{
+                width: 30%;
+            text-align: center;
+            font-size: 12px;
+            padding: 5px;
+            gap:20px;
+            border-radius: 5px;
+            border: solid;
+            background-color: rgb(45, 88, 169);
+            }
+        }
+       
+
+        .logo-con{
+            width: 10%;
+            float: left;
+        }
+
+        @media (max-width:600px){
+            .logo-con{
+                display: none;
+            }
+        }
+
+        /* hero container*/
+
+        .hero-con{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            color: white;
+            margin-top: auto;
+        }
+        @media (max-width:600px){
+            .hero-con{
+                flex-wrap: wrap;
+                margin: auto;
+                margin-top: 30px;
+                width:90%;
+                height: auto;
+                 background-color: #002c7397;
+       
+            }
+        }
+
+
+
+        
+
+        .sub-con{
+            width: 50%;
+            height: auto;
+            display: block;
+            justify-content: center;
+            border-radius: 40px;
+            background-color: #002c735f;
+        }
+
+        @media (max-width:600px){
+            .sub-con{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .title{
+            
+            border-radius: 30px;
+            width: 100%;
+            text-align: center;
+            padding-top: 4%;
+            padding-bottom: 5%;
+            font-size: 3vh;
+            display: block; 
+            resize: both;
+            overflow: auto;
+        }
+
+        @media (max-width:600px) {
+            .title{
+                font-size: 15px;
+                font-weight: 600;
+                padding: 5px;
+                letter-spacing: .5;
+            }
+        }
+
+        .img-con{
+            width: 100;
+            height: 80%;
+            display: flex;
+            justify-content: center; 
+            justify-items: center;
+        }
+
+       
+
+        .abt-pic{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+       
+        #abt{
+            width: 80%;
+            height: 80%;
+            border-radius: 10% ;
+        }
+
+        @media (max-width:600px){
+            #abt{
+                width: 60%;
+                margin: auto;
+                height: 60%;
+                border-radius: 10px;
+                border: solid black;
+            }
+        }
+       
+
+        .subhead{
+            background-color: #002c735f;
+            border-radius: 30px;
+            width: 50%;
+            height: 90%;
+            text-align: center;
+            padding-top: 4%;
+            padding-bottom: 5%;
+            font-size: 2vh;
+            display: block; 
+        }
+        
+        @media (max-width:600px) {
+            .subhead{
+                width: 100%;
+                margin: auto;
+                margin-top: 30px;
+
+                
+            }
+        }
+
+
+        h2{
+            width: 90%;    
+            height: 40px;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-left: 40px;
+        }
+
+
+        @media (max-width:600px) {
+            h2{
+                font-size: 13px;
+                font-weight: 500px;
+                letter-spacing: .5px;
+                margin-top: 0px;
+                margin-bottom: 5px;
+                margin-left: 10px;
+                
+            }
+            
+        }
+
+       
+       
+        .desc-con{
+            width: 90%;
+            height: 80%;
+            display: block;
+            justify-content: center;
+            align-items: baseline;
+            border-radius: 30px;
+            margin-left: 40px;
+            margin-right: 40px;
+            
+        }
+
+        #fg{
+            width: 380px;
+            text-align: justify;
+        }
+
+        @media (max-width:600px) {
+            .desc-con{
+                margin: auto;
+                height: auto;
+            }
+        }
+
+        .desc{
+            width: 100%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        p{
+            font-size: 2.5vh;
+            line-height: 1.5;
+            text-align: center; 
+        }
+
+        @media (max-width:600px){
+            #fg{
+                
+                font-size: 12px;
+            
+            }
+        }
+
+        
+        .butn{
+            width: 100%;
+        }
+
+       
+        .bun-con{
+            width: 100%;
+            background-color: antiquewhite;
+        }
+
+        button{
+            width: 10rem;
+            padding: 20px;
+            background-color: #006EFF;
+            border-radius: 30px;
+            box-shadow: 1px 0px 0px 1px;
+        }
+
+        @media (max-width:600px){
+            button{
+                margin-top: 40px;
+                padding: 10px;
+            }
+        }
+
+        button:hover{
+            background-color: rgb(2, 137, 255);
+            color: black;
+            cursor: pointer;
+        }
+
+        </style>
+</head>
+
+<body>
+
+    <div class="nav-con">
+            
+        <div class="navbar">
+            <div class="logo-con" id="bg1">
+                <img src="pics/bleurise logo.png" alt="logo">
+                    </div>
+
+            
+            <div class="navi">
+                    <a href="beurise.html">Home</a>
+                </div>
+            <div class="navi">
+                    <a href="about.html">About</a>
+                </div>
+            <div class="navi">
+                    <a href="feature.html">Features</a>
+                </div>
+            <div class="navi">
+                    <a href="resources.html">Resources</a>
+                </div>
+            <div class="navi">
+                    <a href="contacts.html">Contacts</a>
+                </div>
+            <div class="navi">
+                    <a href="more.html">More</a>
+                </div>
+            </div>
+    </div>
+        
+
+    
+        <div class="hero-con">
+            <div class="sub-con">
+                
+                 <div class="title"> <h1>About Us</h1> </div>
+                
+                 <div class="img-con" >
+                     <div class="abt-pic" ><img src="pics/underwater.jpg" alt="pic" id="abt"> </div></div>
+            </div>
+               
+                
+            <div class="subhead">
+                    <h2>SeaSource: Seafood Sourcing Optics</h2>
+                
+                <div class="desc-con">
+                <div class="desc">
+                    <p id="fg">
+                        Experience The Finest Seafood With Us:
+                        <br> 
+                        We are committed to providing accessible, high-quality educational resources for seafood and sustainability. Our platform combines in-depth learning materials, interactiv quizzes, and a vibrant community space to help users expand their knowledge of the seafood industry.
+                        <br>
+                        <br>
+                        Whether you’re a student, professional, or seafood enthusiast, SeaSource: Seafood Sourcing Optics offers engaging content and tools to improve your understanding of sustainable practices about seafood. Join our community to learn, share ideas, and contribute to the future of responsible seafood sourcing.
+                    </p>
+                </div>
+                <div class="butn">
+                    <div class="but-con">
+                        <div class="btn">
+                            <a href=""><button>Learn More</button>
+                            </a>
+                        </div>
+                    </div>    
+                </div>  
+                </div>
+           
+            </div>
+        </div>
+
+
+
+    </body>
+
+
+</html>

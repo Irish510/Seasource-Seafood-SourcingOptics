@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>contacts</title>
+            <style>
+
+        *, *::after, *::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+
+        body{
+            background-image: url(pics/output\ \(1\).jpg);
+            background-size: 100%;
+            backdrop-filter: blur(8px); 
+            position: absolute;
+            font-family: sans-serif;
+            width: 100%;
+            height: 100%;
+            color: white;
+         }
+        
+         
+
+         .con{
+            display: block;
+            width: 100%;
+            margin: none;
+         }
+
+       .nav-con{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-evenly;
+        overflow: auto;
+       }
+
+       @media (max-width:600px){
+        .nav-con{
+            width: 100%;
+            height: auto;
+        }
+       }
+
+       .navbar{
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+        background-color: #002c7397;
+        border-radius: 30px;
+        float: right;
+       }
+
+       @media (max-width:360px){
+        .navbar{
+            width: 100%;
+            flex-wrap: wrap;
+            height: auto;
+        }
+    }
+
+       .logo-con{
+        width: 50%;
+        display: flex;
+        width: 50%;
+       }
+
+       @media (max-width:600px){
+        .logo-con{
+            display: none;
+        }
+       }
+
+       #logo{
+        width: 60px;
+        height: 60px;
+       }
+
+       .navi{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+       }
+
+       @media (max-width:600px) {
+        .navi{
+            width: 30%;
+            text-align: center;
+            font-size: 12px;
+            padding: 5px;
+            gap:20px;
+            border-radius: 5px;
+            border: solid;
+            background-color: rgb(45, 88, 169);
+        }
+       }
+
+
+       a{
+        color: white;
+        text-decoration: none;
+        padding-left: 4px;
+        padding-right: 4px;
+        border-radius: 20px;
+       }
+
+       a:hover{
+        background-color: rgb(51, 89, 213);
+       }
+
+       /* hero section */
+
+       .contain{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        margin-top: 30px;
+       }
+
+       @media (max-width:600px) {
+        .contain{
+            gap: 50px;
+            width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+            background-color: #061529d3;
+        }
+       }
+
+       .heading{
+        display: block;
+        width: 100%;
+        height:140px;
+       }
+
+       @media (max-width:600px){
+        .heading{
+            text-align: center;
+            background-color: #061529d3;
+        }
+       }
+
+       .subheading{
+        text-align: center;
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+       }
+
+       @media (max-width:600px) {
+        .subheading{
+            margin-top: 40px;
+            margin-bottom: 20px;
+            justify-content: center;
+            font-size: 15px;
+            height: auto;
+            
+        }
+       }
+
+       .subh{
+        margin: auto;
+        display: flex;
+        width: 80%;
+       }
+
+       @media (max-width:600px) {
+        .subh{
+            font-size: 12px;
+            letter-spacing: .5  ;
+        }
+       }
+
+
+       .icons{
+        width: 100%;
+        display: flex ;
+        justify-content: center;
+        gap: 100px;
+        text-decoration: none;
+       }
+
+       @media (max-width:600px) {
+        .icons{
+            width: 100%;
+            gap: 20px;
+            height: auto;
+            margin: auto;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+       }
+
+       .add{
+        width: 100%;
+       }
+
+       @media (max-width:600px) {
+        .add{
+            margin: auto;
+            width: 80%;
+            height: auto;
+        }
+       }
+
+
+       button{
+        width: 50px;
+        height: 35px;
+        border: none;
+        border-radius: 50px;
+        color: white;
+        font-size: 20px;
+       }
+
+       @media (max-width:600px) {
+        button{
+            width: 70px;
+            height: 40px;
+            color: black;
+            justify-content: center;
+            width: 100%;
+            border: 0;
+            border-radius: 0;
+            background-color:0;
+        }
+       }
+
+       button:hover{   
+        background-color: #006EFF;
+        transform: rotate(360);
+       }
+
+       #b1{
+        margin: auto;
+        color: white;
+        width: 30px;
+        height: 30px;
+       }    
+
+       #b3{
+        width: 100%;
+        font-size: 12px;
+        padding: 15px;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0.34);
+       }
+
+       @media (max-width:600px) {
+        #b3{
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            height:auto;
+            color: black;
+            background-color: white;
+        }
+       }
+    
+       .subheader{
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top:70px ;
+       }
+
+       @media (max-width:600px){
+        .subheader{
+            text-align: center;
+            margin: auto;
+            margin-top: 60px;
+            width: auto;
+            background-color: #061529d3;
+        }
+       }
+
+       .sub1{
+        font-size: 20px;
+        display: flex;
+        width: 100%;
+        color: #006EFF;
+       }
+
+       @media (max-width:800px){
+        .sub1{
+            background-color: white;
+            width: 50%;
+            margin: auto;
+            margin-bottom: 20px;
+            border-radius: 30px;
+            justify-content: center;
+            font-size: 15px;
+            }
+        }
+
+       .sub2{
+        display: flex;
+        width: 100%;
+        margin-top: 5px;
+       }
+
+       @media (max-width:600px){
+        .sub2{ 
+            width: 80%;
+            margin-top: 15px;
+            font-size: 12px;
+            letter-spacing: .5;
+            margin: auto;
+            padding: 5px;
+            justify-content: center;
+            }
+    
+        }
+
+       .message{
+        width: 50%;
+        display: block;
+        height: 50%;
+        margin: auto;
+        margin-top: 15px;
+        background-color: rgba(0, 0, 0, 0.399);
+        border-radius: 40px;
+       }
+
+       @media (max-width:600px) {
+        .message{ 
+            width: 100%;
+            background-color: #061529d3;
+            margin: auto;
+            border-radius: 0;
+            }
+        }
+
+        @media (max-width:600px){
+            form{
+                width: 90%;
+                margin: auto;
+            }
+        }
+       
+       .names, input{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        border-radius: 30px;
+       }
+
+       @media (max-width:600px){
+        .names{
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+       }
+
+       #info{
+        padding: 10px;
+        width: 40%;
+        margin-top: 30px;
+       }
+
+       @media (max-width:600px){
+        #info{
+            width: 100%;
+            padding: 2%;
+            font-size: 10px;
+            margin-top: 5px;
+        }
+       }
+
+       .send{
+        color: black;
+        margin: auto;
+       }
+
+      
+        .cont{
+        color: black;
+        margin: auto;
+        margin-bottom: 10px;
+       }
+
+       @media (max-width:600px){
+        #email{
+            width: 100%;
+            padding: 2%;
+            font-size: 10px;
+            margin-top: 5px;
+        }
+       }
+
+       #email{
+        width: 90%;
+        margin: auto;
+       }
+
+       #contact{
+        width: 90%;
+        margin: auto;
+        height: 150px;
+        text-align: start;
+        margin-bottom: 15px;
+       }
+
+       @media (max-width:600px) {
+        #contact{
+            border-radius: 0;
+            height: 100px;
+            font-size: 10px;
+            text-align: start;
+        }
+       }
+
+       .submit{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+       }
+
+       @media (max-width:600px) {
+        .submit{
+            width: 80%;
+            margin: auto;
+        }
+       }
+
+       .sub4{
+        width: 50%;
+       }
+
+       @media (max-width:600px) {
+        .subh4{
+            border-radius: 20px;
+        }
+       }
+
+
+      
+       #butt{
+        margin-bottom: 20px;
+        width: 100%;
+        background-color: #006EFF;
+        color: white;
+       }
+
+       @media (max-width:600px) {
+        #butt{
+            padding: 5px;
+            font-size: 12px;
+            border-radius: 50px;
+            width: 140px;
+            height: auto;
+        }
+       }
+
+
+       #butt:hover{
+        background-color: #86b7f8;
+       }
+
+
+            </style>
+    </head>
+
+    <body>
+        <div class="con">
+            <div class="nav-con" >
+                <div class="logo-con" id="bg1">
+                    <img src="pics/bleurise logo.png" id="logo" alt="logo">
+                </div>
+                <div class="navbar">
+                    <div class="navi">
+                            <a href="beurise.html">Home</a>
+                        </div>
+                    <div class="navi">
+                            <a href="about.html">About</a>
+                        </div>
+                    <div class="navi">
+                            <a href="feature.html">Features</a>
+                        </div>
+                    <div class="navi">
+                            <a href="resources.html">Resources</a>
+                        </div>
+                    <div class="navi">
+                            <a href="contacts.html">Contacts</a>
+                        </div>
+                    <div class="navi">
+                            <a href="more.html">More</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="heading">
+            <div class="subheading"><h2> GET IN TOUCH</h2></div>
+            <div class="subh"><p>Our friendly team would love to hear from you. Whether you have questions, need support, or want to learn 
+                more about SeaSource, feel free to get in touch with us.</p></div>
+        </div>
+     <div class="contain"> 
+        <div class="icons">
+            <div class="add"> <button type="submit">
+               <img src="pics/location.png" id="b1"> <a href="https://www.facebook.com" title="address" id="b2" >Address</a>
+              </button>
+               <p id="b3">Panabo City, Davao Del Norte, Philippines, 1805</p>
+             </div>
+            
+            <div class="add"> <button type="submit">
+                <img src="pics/phone (1).png" id="b1" > <a href="https://www.youtube.com/shorts/SXHMnicI6Pg" title="phone" id="b2" >Phone</a>
+              </button>
+               <p id="b3">0912 - 345 - 6789</p>
+             </div>
+
+            <div class="add"> <button type="submit">
+                <img src="pics/mail.png" id="b1"> <a href="https://www.bleurise.com" title="email" id="b2" >Email</a>
+              </button> 
+              <p id="b3">bleurisecorp@gmail.com</p> 
+            </div>
+        </div>
+    </div>  
+
+    <div class="subheader">
+        <div class="sub1"> <h3>Message Us</h3></div>
+        <div class="sub2"> <p>Need assistance? Our team is ready to help. Connect with us for personalized 
+            support and expert advice. Send us a message with your query.</p> </div>
+    </div>
+
+    <div class="message">
+        <form action="#">
+            <div class="names">
+                <input type="text" required id="info" placeholder="     First Name: ">
+                <input type="text" required id="info" placeholder="     Last Name: ">
+            </div>
+
+            <div class="cont">
+                <input type="email" required id="email" placeholder="     Input Email: ">
+            </div>
+
+            <div class="send">
+                <input type="text" required id="contact" placeholder="  Message Us Here">
+            </div>
+
+            <div class="submit">
+                <div class="sub4"><button id="butt">send</button></div>
+            </div>
+
+        </form>
+    
+    </div>
+
+    </body>
+</html>
